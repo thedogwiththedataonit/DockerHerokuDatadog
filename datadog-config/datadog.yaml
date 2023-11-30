@@ -1,0 +1,22 @@
+api_key: <api_key>
+site: datadoghq.com
+
+## By default the Agent does not trust the hostname value retrieved from non-root UTS namespace,
+## as it's usually a generated name, unrelated to the host (e.g. when running in a container).
+## When enabled, the Agent will trust the value retrieved from non-root UTS namespace instead of failing.
+## This is necessary if you do not want to utilize Heroku metadata to set the hostname.
+
+#hostname_fqdn: true
+#hostname_trust_uts_namespace: true
+
+
+apm_config:
+  enabled: true
+  apm_non_local_traffic: true
+  # env: none
+  # receiver_port: 8126
+  
+# process_config:
+  # process_collection:
+    # enabled: true
+
